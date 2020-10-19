@@ -58,11 +58,9 @@ void printArreglo(void *arreglo) {
     int *_arreglo = (int *)arreglo;
     int largo = _arreglo[0];
     
-    printf("[");
-    for(int i = 1; i < largo; i++)
-        printf("%d, ", _arreglo[i]);
-    if (largo > 0)
-        printf("%d", _arreglo[largo]);
+    printf("[%d",  _arreglo[0]);
+    for(int i = 1; i <= largo; i++)
+        printf(", %d", _arreglo[i]);
     printf("]");
     return;
 }

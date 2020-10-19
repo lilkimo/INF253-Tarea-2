@@ -1,8 +1,9 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 #include <math.h>
 #include "utilities.h"
-#include "heap.c"
+#include "heap.h"
 
 typedef struct {
     int base;
