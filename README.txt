@@ -4,6 +4,8 @@ Zarko Kuljis, 201823523-7
 Acceda a este directorio desde la terminal y ejecute el comando *make*.
 # Consideraciones
 Reglas aplicadas a la Tarea que **no** están explícitas en el enunciado o sobreescriben al mismo de acuerdo a lo consultado en Aula:
+## Comentarios
+* Asumo que las funciones *maxBases()* y *heapSort()* no deben ser comentadas puesto que están definidas en el enunciado.
 ## Heap
 * No es necesario que el heap reserve memoria para sus elementos y estos dependerán de sus referencias. Por ende el Heap podría presentar información incoherente si los elementos son modificados fuera de este. [Link aquí](https://aula.usm.cl/mod/forum/discuss.php?d=16417#p19728).
 ## Arreglos

@@ -4,6 +4,14 @@
 #include <stdio.h>
 #include <ctype.h>
 
+// isapha::ctype.h
+// Recibe:  Un caracter.
+// Retorna: 1 si es un caracter alfabético (a-zA-Z), 0 en cualquier otro caso.
+
+// toupper::ctype.h
+// Recibe:  Un caracter en formato ASCII (int).
+// Retorna: Su equivalente en mayúscula.
+
 int cmpString(void *string1, void *string2) {
     if (!isalpha(*(char *)string1)) {
         printf("Se ha intentado pushear un string que comienza por un caractér no alfabético:\n\t\"%s\"\n\t ^\nFinalizando forzasamente el programa...\n", (char *)string1);

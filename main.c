@@ -4,6 +4,10 @@
 #include <string.h>
 #include <math.h>
 
+// pow::math.h
+// Recibe:  Dos números.
+// Retorna: <numero1>^<numero2>.
+
 #include "utilities.h"
 #include "heap.h"
 
@@ -12,6 +16,10 @@ typedef struct {
     char *numero;
 } tBase;
 
+// Recibe:  Dos números del tipo tBase.
+// Retorna: 1 si <numero1> es mayor a <numero2>, 0 cualquier otro caso.
+// Realiza: Transforma ambos números a base 10 y luego resta <numero2> a <numero1>, Si el
+//          resultado es positivo <numero1> > <numero2> y retorna 1, si no es así retorna 0.
 int cmpBase(void *numero1, void *numero2) {
     char *_numero = (*(tBase *)numero1).numero;
     int base = (*(tBase *)numero1).base, largo = strlen(_numero);
@@ -36,11 +44,13 @@ int cmpBase(void *numero1, void *numero2) {
     return 0;
 }
 
-// Muestra los elementos del tipo tBase en pantalla de la forma "<numero>b<base>"".
-// Si el número no está en base 10 añade su conversión de la forma "(<numeroEnBase10>b10)".
-// Ej:
-//      10 en base 4: 10b4(4b10)
-//      7 en base 10: 7b10
+// Recibe:  Un <numero> del tipo tBase.
+// Retorna: Nada.
+// Realiza: Muestra los elementos del tipo tBase en pantalla de la forma "<numero>b<base>". Si
+//          el número no está en base 10 añade su conversión de la forma "(<numeroEnBase10>b10)".
+//          Ej:
+//              10 en base 4: 10b4(4b10)
+//              7 en base 10: 7b10
 void printBase(void *numero) {
     char *_numero = (*(tBase *)numero).numero;
     int base = (*(tBase *)numero).base;
