@@ -1,7 +1,9 @@
 #include <stdlib.h>
 #include <stdio.h>
+
 #include <string.h>
 #include <math.h>
+
 #include "utilities.h"
 #include "heap.h"
 
@@ -100,7 +102,11 @@ void heapSort(void **array, int largo, int (* cmpElemento)(void *, void *), void
 }
 
 int main() {
-    
+    /*
+    Este es un conjunto de pruebas que hice con otro compañero que está en
+    el ramo, así que es posible que vean estas mismas pruebas en otra tarea.
+    */
+    /*
     tBase a;
     a.base = 2;
     a.numero = "101010"; //42
@@ -128,30 +134,25 @@ int main() {
     void *numeritosVoid[] = {&a, &b, &c, &d, &e, &f, &g};
     heapSort(numeritosVoid, 7, cmpBase, printBase);
     
-    /*
-    char* numeritos[] = {"asdfgh", "bhqdgwjq", "cagswjgd", "Rdyuaoisdha", "DOU", "LKJLKJda", "jwlkdq"};
-    void *numeritosVoid[] = {numeritos[0], numeritos[1], numeritos[2], numeritos[3], numeritos[4], numeritos[5], numeritos[6]};
-    heapSort(numeritosVoid, 7, cmpString, printString);
-    */
-    /*
-    float numeritos[] = {31.23, 65.1223, 3.14, 2.165, 234.64, 4564.123, 12312.656, 1234234, 31, 24};
-    void *numeritosVoid[] = {&numeritos[0], &numeritos[1], &numeritos[2], &numeritos[3], &numeritos[4], &numeritos[5], &numeritos[6], &numeritos[7], &numeritos[8], &numeritos[9]};
-    heapSort(numeritosVoid, 10, cmpFlotante, printFlotante);
-    */
-    /*
-    int numeritos[] = {7, 2, 4, 21, 12, 55, 32, 87, 11, 111};
-    void *numeritosVoid[] = {&numeritos[0], &numeritos[1], &numeritos[2], &numeritos[3], &numeritos[4], &numeritos[5], &numeritos[6], &numeritos[7], &numeritos[8], &numeritos[9]};
-    heapSort(numeritosVoid, 10, cmpEntero, printEntero);
-    */
-    /*
+    char* palabritas[] = {"asdfgh", "bhqdgwjq", "cagswjgd", "Rdyuaoisdha", "DOU", "LKJLKJda", "jwlkdq"};
+    heapSort((void **)palabritas, 7, cmpString, printString);
+    
+    float numerotes[] = {31.23, 65.1223, 3.14, 2.165, 234.64, 4564.123, 12312.656, 1234234, 31, 24};
+    void *numerotesVoid[] = {&numerotes[0], &numerotes[1], &numerotes[2], &numerotes[3], &numerotes[4], &numerotes[5], &numerotes[6], &numerotes[7], &numerotes[8], &numerotes[9]};
+    heapSort(numerotesVoid, 10, cmpFlotante, printFlotante);
+
+    int numeritosxd[] = {7, 2, 4, 21, 12, 55, 32, 87, 11, 111};
+    void *numeritosxdVoid[] = {&numeritosxd[0], &numeritosxd[1], &numeritosxd[2], &numeritosxd[3], &numeritosxd[4], &numeritosxd[5], &numeritosxd[6], &numeritosxd[7], &numeritosxd[8], &numeritosxd[9]};
+    heapSort(numeritosxdVoid, 10, cmpEntero, printEntero);
+
     int numeritos1[] = {9, 2, 4, 21, 12, 55, 32, 87, 11, 111};
     int numeritos2[] = {7, 4, 32, 44, 66, 77, 123, 67};
     int numeritos3[] = {10, 0, 11, 22, 33, 44, 55, 66, 77, 88, 99};
     int numeritos4[] = {3, 69, 420, 1313};
     int numeritos5[] = {1, 23};
 
-    void *numeritosVoid[] = {numeritos1, numeritos2, numeritos3, numeritos4, numeritos5};
-    heapSort(numeritosVoid, 5, cmpArreglo, printArreglo);
+    void *arregloNumeritosVoid[] = {numeritos1, numeritos2, numeritos3, numeritos4, numeritos5};
+    heapSort(arregloNumeritosVoid, 5, cmpArreglo, printArreglo);
     */
     return 0;
 }
