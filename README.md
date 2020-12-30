@@ -1,5 +1,7 @@
 # Integrantes
 Zarko Kuljis, 201823523-7
+
+Obtuve un 100, ojo con los mallocs
 # Uso
 Acceda a este directorio desde la terminal y ejecute el comando *make*.
 # Consideraciones
